@@ -1,14 +1,14 @@
 {
   "expo": {
     "name": "TrashTrack",
-    "slug": "TrashTrack",
+    "slug": "trashtrack",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./app/assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,13 +16,22 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.MiniProject.TrashTrack",
+      "config": {
+        "googleServicesFile": "./google-services.json"},
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dfb2ba99-867b-42f2-93b4-31cf20c475f5"
+      }
+    },
+    "owner": "tejasprasad"
   }
 }
